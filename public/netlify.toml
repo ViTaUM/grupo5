@@ -1,6 +1,6 @@
 [build]
   command = "yarn vite build --base=/"
-  publish = "/build"
+  publish = "/dist"
   base ="/"
 
 [[redirects]]
