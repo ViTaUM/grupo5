@@ -7,6 +7,7 @@
   color-scheme: light dark;
   color: #000000;
   background-image: url("/fundo.jpg");
+  background-size: cover;
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -52,6 +53,13 @@ a:hover {
   padding: 1rem;
 }
 
+@media (max-width: 768px) {
+  .jogo-da-memoria {
+    padding: 0.5rem;
+  }
+}
+
+
 .jogo-da-memoria__conteudo {
   max-width: 600px;
   margin: 0 auto;
@@ -78,6 +86,19 @@ a:hover {
   grid-template-columns: repeat(6, 1fr);
   gap: 1rem;
 }
+
+@media (max-width: 768px) {
+  .cartas {
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas em telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+  .cartas {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas ainda menores */
+  }
+}
+
 
 .carta {
   max-width: 100%;
