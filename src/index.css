@@ -63,7 +63,7 @@ a:hover {
 }
 
 .jogo-da-memoria__conteudo {
-  max-width: 600px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -85,7 +85,7 @@ a:hover {
 
 .cartas {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   gap: 1rem;
 }
 
