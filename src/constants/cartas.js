@@ -3,6 +3,7 @@ const imagens = [
   "pipi.png",
   "julia.png",
   "gigi.png",
+  "gigi2.png",
   "mari.png",
   "flora.png",
   "nicolas.png",

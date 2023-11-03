@@ -14,7 +14,7 @@ export const Carta = ({ id, idDoPar, imagem }) => {
   const bloqueado = virada || idsDasCartasViradas.length > 1;
 
   const cn = classNames("carta", {
-    "carta--virada": virada,
+    "carta--virada": true,
     "carta--encontrada": encontrada,
   });
 
