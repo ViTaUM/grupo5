@@ -1,7 +1,7 @@
 export const resultados = [
   {
     titulo: "Excelente",
-    imagem: "kitekat-4.png",
+    imagem: "kitekat-1.png",
     min: 75,
   },
   {

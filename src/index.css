@@ -12,7 +12,7 @@
   background-repeat: no-repeat;
 
   @media (max-width: 768px) {
-    background-color: #FFE447;
+    background-color: #ffe447;
     background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
   }
 
@@ -56,7 +56,31 @@ a:hover {
   padding: 1rem;
 }
 
+@keyframes tituloAnimado {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.titulo-jogo {
+  font-size: 36px;
+  text-align: center;
+  animation: tituloAnimado 2s ease infinite;
+}
+
 @media (max-width: 768px) {
+  .titulo-jogo {
+    line-height: 1; /* Adicione o valor de espaçamento vertical desejado */
+  }
   .jogo-da-memoria {
     padding: 0.5rem;
   }
@@ -67,12 +91,6 @@ a:hover {
   margin: 0 auto;
 }
 
-.titulo-jogo {
-  color: #000; /* Cor do texto */
-  padding: 10px; /* Espaçamento interno para o texto */
-  text-align: center; /* Centraliza o texto horizontalmente */
-}
-
 .placar {
   display: flex;
   align-items: center;
@@ -81,6 +99,25 @@ a:hover {
 
 .pontos {
   padding: 1rem 0;
+}
+
+.zoom {
+  animation: zoomEffect 1s ease;
+}
+
+@keyframes zoomEffect {
+  0% {
+    transform: scale(1);
+    font-size: 1em; /* Tamanho de fonte inicial */
+  }
+  50% {
+    transform: scale(1.1);
+    font-size: 1.2em; /* Tamanho de fonte durante a animação */
+  }
+  100% {
+    transform: scale(1);
+    font-size: 1em; /* Tamanho de fonte final */
+  }
 }
 
 .cartas {
