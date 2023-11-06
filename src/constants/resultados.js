@@ -1,17 +1,17 @@
 export const resultados = [
   {
     titulo: "Excelente",
-    imagem: "kitekat-1.png",
+    imagem: "sucesso.gif",
     min: 75,
   },
   {
     titulo: "Parabéns",
-    imagem: "kitekat-3.png",
+    imagem: "sucesso.gif",
     min: 50,
   },
   {
     titulo: "Bom",
-    imagem: "kitekat-3.png",
+    imagem: "sucesso.gif",
     min: 25,
   },
 ];
